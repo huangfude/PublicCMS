@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+	<title>文章演示 - PublicCMS</title>
+	<meta name="keywords" content="文章演示"/>
+	<meta name="description" content="文章演示"/>
+<!--#include virtual="/include/header.html"-->
+</head>
+<body>
+<!--#include virtual="/include/nav.html"-->
+<script>
+	$("header nav ul li a:contains('文章演示')").parent().addClass('selected');
+</script>
+<main>
+	<div class="container nav">
+				<a href="//localhost:8080/publiccmsarticle.html" class="selected">文章演示</a>
+				<a href="//localhost:8080/publiccmspicture.html">图集演示</a>
+				<a href="//localhost:8080/publiccmsarticle_picture.html">文章图集</a>
+				<a href="//localhost:8080/publiccmslink.html">外链演示</a>
+	</div>
+	<div class="container bread">
+	<a href="//127.0.0.1:8080/publiccms">首页</a> &gt;
+				<a href="//localhost:8080/publiccmsdemonstrate.html">演示</a>  &gt;
+				<script>
+					$("header nav ul li a:contains('演示')").parent().addClass('selected');
+				</script>
+				<a href="//localhost:8080/publiccmsarticle.html">文章演示</a>
+	</div>
+	<div class="container">
+		<div class="data-list left-content">
+				<div class="page">
+						<span>查看更多</span>
+				</div>
+		</div>
+		<aside>
+			<!--#include virtual="/include/category/list.html/1.html"-->
+			<!--#include virtual="/include/category/list.html/2.html"-->
+			<div>
+				<h3>热门排行</h3>
+				<ul class="rank">
+				</ul>
+			</div>
+		</aside>
+	</div>
+</main>
+<!--#include virtual="/include/footer.html"-->
+</body>
+</html>
